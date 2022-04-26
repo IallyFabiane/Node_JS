@@ -33,7 +33,8 @@ const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.saldo = 0; //depósito inicial
 contaCorrenteRicardo.agencia = 1001;
 contaCorrenteRicardo.depositar(100); //2º depósito
-contaCorrenteRicardo.sacar(50); //saque
+const valorSacado = contaCorrenteRicardo.sacar(50); //saque
 
 console.log(cliente1);
 console.log(cliente2);
+console.log(valorSacado);
