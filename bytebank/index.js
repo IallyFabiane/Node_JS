@@ -9,13 +9,12 @@ class ContaCorrente { //construindo uma classe
     sacar(valor) {
         if(this.#saldo >= valor) { //condicionando o cliente que pode fazer uma operação de saque no banco
             this.#saldo -= valor;
-            console.log(this.#saldo);
+            return valor;
         }
     }
     depositar(valor) { //condicionando a ação de depositar apenas se o saldo for positivo
         if(valor > 0) {
             this.#saldo+= valor;
-            console.log(this.#saldo);
         }
     }
 }
