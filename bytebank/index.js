@@ -1,3 +1,5 @@
+import { Cliente } from "./Cliente.js";
+import { ContaCorrente } from "./ContaCorrente.js";
 
 const cliente1 = new Cliente(); //instanciando um objeto a partir de uma classe
 cliente1.nome = "Ricardo";
