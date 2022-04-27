@@ -14,8 +14,9 @@ class ContaCorrente { //construindo uma classe
     }
     depositar(valor) { //condicionando a ação de depositar apenas se o saldo for positivo
         if(valor > 0) {
-            this.#saldo+= valor;
+            return; //early return
         }
+        this.#saldo+= valor;
     }
 }
 
