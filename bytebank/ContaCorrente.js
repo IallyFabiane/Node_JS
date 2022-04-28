@@ -9,6 +9,10 @@ export class ContaCorrente { //construindo uma classe
             this.#cliente = novoValor;
         }
     }
+    
+    get cliente(){ //pegando o valor do atributo privado cliente através do acessor get
+        return this.#cliente;
+    }
 
     #saldo; //atributos seguido de # significa que são atributos privados(apenas a classe pode alterá-los)
     sacar(valor) {
