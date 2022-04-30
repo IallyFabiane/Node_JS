@@ -4,6 +4,7 @@ export class ContaCorrente { //construindo uma classe
     static numeroDeContas = 0; //variável contadora para registrar quantas contas correntes foram criadas. Recebe +1 sempre que uma nova instância da classe ContaCorrente for inicializada a partir do constructor.
     agencia;
     #cliente;
+    #saldo = 0;
 
     set cliente(novoValor) { //atribuindo valores ao cliente com a palavra-reservada set
         if(novoValor instanceof Cliente) { //condicionando a atribuição do valor apenas se cliente for uma instância da classe Cliente
