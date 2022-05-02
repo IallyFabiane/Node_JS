@@ -1,13 +1,19 @@
 export class Cliente { //construindo uma classe 
-    nome;
+ 
     #cpf; 
+    #senha;
 
     get cpf() {
         return this.#cpf;
     }
+    
+    get senha() {
+        return this.#senha;
+    }
 
-    constructor(nome, cpf) { //com o constructor é possível passar os valores de nome e cpf do cliente a ser criado, porém não é possível modificar o atributo privado
+    constructor(nome, cpf, senha) { //com o constructor é possível passar os valores de nome e cpf do cliente a ser criado, porém não é possível modificar o atributo privado
         this.nome = nome;
         this.#cpf = cpf;
+        this.#senha = senha;
     }
 }
