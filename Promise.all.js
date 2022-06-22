@@ -10,9 +10,9 @@ function promessa(msg, tempo) {
     });
 }
 
-const promises = ['Primeiro valor', promessa('Promise 1', 3000), promessa('Promise 2', 500), promessa('Promise 3', 2000), 'Outro valor'];
+const promises = ['Primeiro valor', promessa('Promise 1', 3000), promessa( 'Promise 2', 500), promessa('Promise 3', 2000), 'Outro valor'];
 
-Promise.all(promises)
+Promise.all(promises) //retorna um array de promessas, se alguma dessas promessas não for resolvida retorna o erro
     .then(valor => {
         console.log(valor)
     })
