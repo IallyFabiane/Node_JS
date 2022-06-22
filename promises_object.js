@@ -9,7 +9,9 @@ function jsAssincrono(x) {
     });
 }
 
-jsAssincrono(0)
+jsAssincrono(2)
     .then(console.log) //acessando o valor da promise com o .then()
     .catch(console.error); //acessando o erro
+
+
 
